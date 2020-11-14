@@ -24,8 +24,8 @@
               <p class="card-text">{{ one_news.details }}</p>
             </div>
           </div>
-          <button type="button" class="btn btn-outline-success"><a href="http://127.0.0.1:5000/news/{{ one_news.id }}/update">Update</a></button>
-          <button type="button" class="btn btn-outline-danger"><a href="http://127.0.0.1:5000/news/{{ one_news.id }}/delete">Delete</a></button>
+          <button type="button" class="btn btn-outline-success"><a href="/news/{{ one_news.id }}/update">Update</a></button>
+          <button type="button" class="btn btn-outline-danger"><a href="/news/{{ one_news.id }}/delete">Delete</a></button>
         {% endif %}
       {% endfor %}
     </div>

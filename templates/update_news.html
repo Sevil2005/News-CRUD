@@ -14,7 +14,7 @@
   <div class="container">
       <div class="row d-flex justify-content-center">
           <div class="col-md-6">
-              <form action="http://127.0.0.1:5000/news/{{ updating_news.id }}/update" method="POST">
+              <form action="/news/{{ updating_news.id }}/update" method="POST">
                   <div class="form-group">
                       <label for="exampleInputTitle">Title of news</label>
                       <input type="text" value="{{ updating_news.title }}" name="title" class="form-control" id="exampleInputTitle">
