@@ -28,13 +28,13 @@ def add():
 @app.route('/news/<int:id>/update', methods=["GET", "POST"])
 def update_news(id):
     if request.method == "POST" and id <= news_id:
-        ftitle = request.form['title']
-        fdetail = request.form['detail']
+        f_title = request.form['title']
+        f_detail = request.form['detail']
 
-        for item in all_news:
-            if item.id == id:
-                item.title = ftitle
-                item.details = fdetail
+        for updating_news in all_news:
+            if updating_news.id == id:
+                updating_news.title = f_title
+                updating_news.details = f_detail
         return redirect(url_for('news'))
 
     elif request.method == 'GET' and id <= news_id:
