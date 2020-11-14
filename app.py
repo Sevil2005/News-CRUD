@@ -46,7 +46,7 @@ def update_news(id):
 def delete(id):
     for deleting_news in all_news:
         if deleting_news.id == id:
-            all_news.pop(all_news.index(deleting_news))
+            all_news.remove(deleting_news)
 
     return redirect(url_for('news'))
 
